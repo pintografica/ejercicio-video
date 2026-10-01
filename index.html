@@ -3,24 +3,71 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Práctica multimedia</title>
+        <style>
+            .video-container {
+                position: relative;
+                /* Proporción 16:9 */
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                margin: 1rem auto;
+                border: none;
+            }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1>Práctica multimedia</h1>
+            <h1>VIDEOpoemas</h1>
+            <h2>Palabras que también se pueden mirar.</h2>
         </header>
 
-        <nav></nav>
+        <nav>
+            <h2>Menú principal</h2>
+            <ul>
+                <li><a href="#">Poemas</a></li>
+                <li><a href="#">Autores</a></li>
+                <li><a href="#">Más información</a></li>
+            </ul>
+        </nav>
 
         <main>
             <article>
-                <h2>Video de youtube</h2>
+                <h2>Charles Bukowski</h2>
 
-                <iframe width="600" height="400" src="https://www.youtube.com/embed/FMOgp4kOkrg" title="çantamarta - la esquina + violenta (live performance)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img src="assets/image/bukowski.webp" alt="Fotografía en blanco y negro del escritor Charles Bukowsky fumando un cigarrillo" />
 
-                <h3>Ahora un audio</h3>
+                <!-- Aquí iría el video -->
 
-                
+                <h3>El poema en imágenes: Cerveza</h3>
+
+                <p>Charles Bukowski (1920–1994) fue un poeta y escritor estadounidense conocido por una obra marcada por la vida cotidiana, la soledad, el alcohol, el deseo y los márgenes de la sociedad. Su escritura, directa y sin demasiados adornos, convirtió escenas aparentemente insignificantes en materia poética.</p>
+
+                <p>En «Cerveza», Bukowski vuelve la mirada hacia uno de sus temas recurrentes: el alcohol como refugio, compañía y parte de la rutina. Con su lenguaje sencillo y desencantado, el poema transforma una acción tan cotidiana como beber una cerveza en una reflexión sobre la soledad y la experiencia de estar vivo.</p>
+
+                <div class="video-container">
+                    <iframe width="300" src="https://www.youtube.com/embed/bg1qboIuF7M" title="Cerveza - poema de Charles Bukowski" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <!-- A partir de aquí iría el audio -->
+
+                <h2>La voz de Bukowski: Post Office</h2>
+
+                <p>La voz de Charles Bukowski está estrechamente ligada a sus experiencias personales y a los personajes que creó a partir de ellas. En Post Office, su primera novela, publicada en 1971, sigue los años de Henry Chinaski trabajando para el servicio postal estadounidense, entre empleos, bares, apuestas, alcohol y relaciones personales. La novela tiene un marcado carácter autobiográfico y presenta muchos de los temas que atraviesan la obra del autor.</p>
+
+                <p>Escuchar su voz añade otra dimensión a su escritura: detrás de los versos aparece también el hombre que convirtió su propia vida cotidiana en materia literaria.</p>
+
+                <audio src="assets/audio/Post_Office_(novel_by_Charles_Bukowsky)_Spoken_article.ogg" controls></audio>
             </article>
         </main>
     </body>
